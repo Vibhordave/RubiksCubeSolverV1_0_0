@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "Cube3D.cpp"
+#include "Data Structures/Cube3D.cpp"
 using namespace std;
 int main() {
     Cube3D cube;
