@@ -122,12 +122,12 @@ public:
     /*
      * Perform moves on the Rubik Cube
      */
-    RubiksCube &move(MOVE ind);
+    GenericCube &move(MOVE ind);
 
     /*
      * Invert a move
      */
-    RubiksCube &invert(MOVE ind);
+    GenericCube &invert(MOVE ind);
 
     /*
      * Rotational Moves on the Rubik Cubes
@@ -140,41 +140,41 @@ public:
      * B, B’, B2
      */
 
-    virtual RubiksCube &f() = 0;
+    virtual GenericCube &f() = 0;
 
-    virtual RubiksCube &fPrime() = 0;
+    virtual GenericCube &fPrime() = 0;
 
-    virtual RubiksCube &f2() = 0;
+    virtual GenericCube &f2() = 0;
 
-    virtual RubiksCube &u() = 0;
+    virtual GenericCube &u() = 0;
 
-    virtual RubiksCube &uPrime() = 0;
+    virtual GenericCube &uPrime() = 0;
 
-    virtual RubiksCube &u2() = 0;
+    virtual GenericCube &u2() = 0;
 
-    virtual RubiksCube &l() = 0;
+    virtual GenericCube &l() = 0;
 
-    virtual RubiksCube &lPrime() = 0;
+    virtual GenericCube &lPrime() = 0;
 
-    virtual RubiksCube &l2() = 0;
+    virtual GenericCube &l2() = 0;
 
-    virtual RubiksCube &r() = 0;
+    virtual GenericCube &r() = 0;
 
-    virtual RubiksCube &d() = 0;
+    virtual GenericCube &d() = 0;
 
-    virtual RubiksCube &dPrime() = 0;
+    virtual GenericCube &dPrime() = 0;
 
-    virtual RubiksCube &d2() = 0;
+    virtual GenericCube &d2() = 0;
 
-    virtual RubiksCube &rPrime() = 0;
+    virtual GenericCube &rPrime() = 0;
 
-    virtual RubiksCube &r2() = 0;
+    virtual GenericCube &r2() = 0;
 
-    virtual RubiksCube &b() = 0;
+    virtual GenericCube &b() = 0;
 
-    virtual RubiksCube &bPrime() = 0;
+    virtual GenericCube &bPrime() = 0;
 
-    virtual RubiksCube &b2() = 0;
+    virtual GenericCube &b2() = 0;
 
     string getCornerColorString(uint8_t ind) const;
 

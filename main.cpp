@@ -1,6 +1,8 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
+#include "Cube3D.cpp"
+using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Cube3D cube;
+    cube.print();
     return 0;
 }
