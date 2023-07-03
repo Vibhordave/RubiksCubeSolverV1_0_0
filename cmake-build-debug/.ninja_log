@@ -1,0 +1,5 @@
+# ninja log v5
+9	1197	7100872319780590	CMakeFiles/RubiksCubeSolverV1_0_0.dir/Cube3D.cpp.obj	ad2e3f928ed7282b
+0	1215	7100872319960635	CMakeFiles/RubiksCubeSolverV1_0_0.dir/main.cpp.obj	2d8d80eea8b70af
+5	1262	7100872320425762	CMakeFiles/RubiksCubeSolverV1_0_0.dir/GenericCube.cpp.obj	6ac08d0486ba179b
+1263	1399	7100872321766067	RubiksCubeSolverV1_0_0.exe	998346cc589a2bd2
