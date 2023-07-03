@@ -8,21 +8,21 @@ using namespace std;
 int main() {
 
      //DFS Solver Testing __________________________________________________________________________________________
-     cout<<"Solving with DFS ----------------------------------------------------------------"<<endl;
-     Cube3D cube;
-     cube.print();
-
-     vector<Cube3D::MOVE> shuffle_moves = cube.randomShuffleCube(6);
-     for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
-     cout << "\n";
-     cube.print();
-
-     CubeDFS<Cube3D, Hash3d> dfsSolver(cube, 8);
-     vector<Cube3D::MOVE> solve_moves = dfsSolver.solve();
-
-     for (auto move: solve_moves) cout << cube.getMove(move) << " ";
-     cout << "\n";
-     dfsSolver.rubiksCube.print();
+//     cout<<"Solving with DFS ----------------------------------------------------------------"<<endl;
+//     Cube3D cube;
+//     cube.print();
+//
+//     vector<Cube3D::MOVE> shuffle_moves = cube.randomShuffleCube(6);
+//     for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+//     cout << "\n";
+//     cube.print();
+//
+//     CubeDFS<Cube3D, Hash3d> dfsSolver(cube, 8);
+//     vector<Cube3D::MOVE> solve_moves = dfsSolver.solve();
+//
+//     for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+//     cout << "\n";
+//     dfsSolver.rubiksCube.print();
 
 
     //BFS Solver -----------------------------------------------------------------------------------------------------
@@ -30,10 +30,10 @@ int main() {
     CubeBitboard cube2;
     cube2.print();
 
-    vector<Cube3D::MOVE> shuffle_moves2 = cube2.randomShuffleCube(6);
+    vector<Cube3D::MOVE> shuffle_moves2 = cube2.randomShuffleCube(10);
     for(auto move: shuffle_moves2) cout << cube2.getMove(move) << " ";
     cout << "\n";
-    cube.print();
+    cube2.print();
 
     CubeBFS<CubeBitboard, HashBitboard> bfsSolver(cube2);
     vector<GenericCube::MOVE> solve_moves2 = bfsSolver.solve();
