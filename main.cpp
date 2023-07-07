@@ -29,8 +29,9 @@ int main() {
     cout<<"Solving with BFS ----------------------------------------------------------------"<<endl;
     CubeBitboard cube2;
     cube2.print();
-
-    vector<Cube3D::MOVE> shuffle_moves2 = cube2.randomShuffleCube(10);
+    int numShuffles;
+    cin>>numShuffles;
+    vector<Cube3D::MOVE> shuffle_moves2 = cube2.randomShuffleCube(numShuffles);
     for(auto move: shuffle_moves2) cout << cube2.getMove(move) << " ";
     cout << "\n";
     cube2.print();
