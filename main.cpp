@@ -30,6 +30,7 @@ int main() {
     CubeBitboard cube2;
     cube2.print();
     int numShuffles;
+    cout<<"Please Enter the number of Shuffles to be made: ";
     cin>>numShuffles;
     vector<Cube3D::MOVE> shuffle_moves2 = cube2.randomShuffleCube(numShuffles);
     for(auto move: shuffle_moves2) cout << cube2.getMove(move) << " ";
